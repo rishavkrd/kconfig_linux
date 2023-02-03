@@ -1,0 +1,543 @@
+fs/lockd/svc.c: * These can be set at insmod time (useful for NFS as root filesystem),
+fs/ntfs/Kconfig:	  to insmod when loading the ntfs module.  Once the driver is active,
+init/Kconfig:	  modprobe, lsmod, modinfo, insmod and rmmod.
+samples/trace_events/Makefile:# then to use one (as root):  insmod <module_name.ko>
+samples/hw_breakpoint/data_breakpoint.c: * usage: insmod data_breakpoint.ko ksym=<ksym_name>
+samples/kprobes/kretprobe_example.c: * usage: insmod kretprobe_example.ko func=<func_name>
+samples/kprobes/Makefile:# then to use one (as root):  insmod <module_name.ko>
+samples/livepatch/livepatch-sample.c: * $ insmod livepatch-sample.ko
+Documentation/zh_CN/oops-tracing.txt:没有模块MODULE_LICENSE或者带有insmod认为是与GPL不相容的的MODULE_LICENSE的模块被
+Documentation/zh_CN/oops-tracing.txt:  2：'F'如果有任何通过“insmod -f”被强制装载的模块，' '如果所有模块都被正常装载。
+Documentation/zh_CN/oops-tracing.txt:  4：'R'如果模块通过“insmod -f”被强制装载，' '如果所有模块都被正常装载。
+Documentation/java.txt:   to insert it manually with modprobe/insmod, as kmod
+Documentation/oops-tracing.txt:     insmod as GPL compatible are assumed to be proprietary.
+Documentation/oops-tracing.txt:  2: 'F' if any module was force loaded by "insmod -f", ' ' if all
+Documentation/sound/oss/CMI8330:/sbin/insmod soundcore
+Documentation/sound/oss/CMI8330:/sbin/insmod sound
+Documentation/sound/oss/CMI8330:/sbin/insmod uart401
+Documentation/sound/oss/CMI8330:/sbin/insmod ad1848 io=0x530 irq=7 dma=0 soundpro=1
+Documentation/sound/oss/CMI8330:/sbin/insmod sb io=0x220 dma=1 dma16=5 irq=5 mpu_io=0x330
+Documentation/sound/oss/ESS1868:/sbin/insmod uart401
+Documentation/sound/oss/ESS1868:/sbin/insmod sb io=0x220 irq=5 dma=1 dma16=-1
+Documentation/sound/oss/ESS1868:/sbin/insmod mpu401 io=0x330
+Documentation/sound/oss/ESS1868:/sbin/insmod opl3 io=0x388
+Documentation/sound/oss/ESS1868:/sbin/insmod v_midi
+Documentation/sound/oss/ESS1868:/sbin/insmod opl3 io=0x388
+Documentation/sound/oss/ultrasound:insmod ad1848
+Documentation/sound/oss/ultrasound:insmod gus io=* irq=* dma=* ...
+Documentation/sound/oss/OPL3:insmod opl3 io=0x388
+Documentation/sound/oss/btaudio:interface.  There is a insmod option (rate) to tell the driver which
+Documentation/sound/oss/btaudio:You can tell the driver to use this mode with the insmod option "analog=1".
+Documentation/sound/oss/Soundblaster:insmod uart401
+Documentation/sound/oss/Soundblaster:insmod sb ...
+Documentation/sound/oss/Soundblaster:insmod opl3 io=0x388
+Documentation/sound/oss/Introduction:The modular sound drivers may be loaded via insmod or modprobe.  
+Documentation/sound/oss/Introduction:If loading via insmod, the common modules must be loaded in the 
+Documentation/sound/oss/Introduction:/sbin/insmod soundcore
+Documentation/sound/oss/Introduction:/sbin/insmod sound  
+Documentation/sound/oss/Introduction:/sbin/insmod uart401
+Documentation/sound/oss/Introduction:/sbin/insmod sb io=$SB_BASE irq=$SB_IRQ dma=$SB_DMA dma16=$SB_DMA2 mpu_io=$SB_MP
+Documentation/sound/oss/Introduction:2)  On the command line when using insmod or in a bash script
+Documentation/sound/oss/Introduction:1)  Information on kernel modules: manual pages for insmod and modprobe.
+Documentation/sound/oss/PAS16:  insmod opl3
+Documentation/sound/oss/README.OSS:Boot time configuration (using lilo and insmod) 
+Documentation/sound/oss/README.OSS:check for possible boot (insmod) time error messages in /var/adm/messages.
+Documentation/sound/oss/MultiSound:#  insmod msnd
+Documentation/sound/oss/MultiSound:#  insmod msnd_classic io=0x290 irq=7 mem=0xd0000
+Documentation/sound/oss/MultiSound:#  insmod msnd
+Documentation/sound/oss/MultiSound:#  insmod msnd_pinnacle io=0x210 irq=5 mem=0xd8000 <-- match mypinnacle.conf values
+Documentation/sound/oss/MultiSound:#  insmod soundcore
+Documentation/sound/oss/MultiSound:#  insmod msnd
+Documentation/sound/oss/MultiSound:#  insmod msnd_pinnacle cfg=0x250 io=0x290 irq=5 mem=0xd0000
+Documentation/sound/oss/MultiSound:#  insmod sound
+Documentation/sound/oss/MultiSound:#  insmod mpu401 io=0x330 irq=9                    <-- match mypinnacle.conf values
+Documentation/sound/oss/MultiSound:#  insmod sound
+Documentation/sound/oss/MultiSound:#  insmod mpu401 io=0x330 irq=9
+Documentation/sound/oss/MultiSound:#  insmod soundcore
+Documentation/sound/oss/MultiSound:#  insmod msnd
+Documentation/sound/oss/MultiSound:#  insmod msnd_pinnacle cfg=0x250 io=0x290 irq=5 mem=0xd0000 mpu_io=0x330 mpu_irq=9
+Documentation/sound/oss/MultiSound:#  insmod sound
+Documentation/sound/oss/MultiSound:#  insmod mpu401 io=0x330 irq=9
+Documentation/sound/oss/MultiSound:#  insmod soundcore
+Documentation/sound/oss/MultiSound:#  insmod msnd
+Documentation/sound/oss/MultiSound:#  insmod msnd_pinnacle cfg=0x250 io=0x290 irq=5 mem=0xd0000 joystick_io=0x200
+Documentation/fmc/mezzanine.txt:        insmod fmc-trivial.ko \
+Documentation/fmc/fmc-chardev.txt:  spusa.root# insmod fmc-chardev.ko
+Documentation/fmc/fmc-fakedev.txt:     spusa.root# insmod fmc-fakedev.ko
+Documentation/fmc/fmc-fakedev.txt:     spusa.root# insmod fmc-fakedev.ko eeprom=fdelay-eeprom.bin
+Documentation/fmc/fmc-write-eeprom.txt:        spusa.root# insmod /tmp/fmc-write-eeprom.ko busid=0x0200 file=try.tlv
+Documentation/fmc/fmc-write-eeprom.txt:     spusa.root# insmod fmc-fakedev.ko
+Documentation/fmc/fmc-write-eeprom.txt:        spusa.root# insmod fmc-write-eeprom.ko busid=0 file=fdelay-eeprom.bin; \
+Documentation/ide/ChangeLog.ide-cd.1994-2004: *                         	insmod ide-cd ignore='hda hdb'
+Documentation/ide/ide.txt:driver using the "options=" keyword to insmod, while replacing any ',' with
+Documentation/scsi/advansys.txt:   defined when the driver is loaded. The following insmod command
+Documentation/scsi/advansys.txt:      insmod advansys.o asc_dbglvl=1
+Documentation/scsi/advansys.txt:      insmod advansys.o asc_iopflag=1 asc_ioport=0x110,0x330
+Documentation/scsi/scsi-changer.txt:If you insmod the driver with "insmod debug=1", it will be verbose and
+Documentation/scsi/scsi-changer.txt:	at insmod time (default: 1).
+Documentation/scsi/scsi-changer.txt:	These insmod options can be used to tell the driver that there
+Documentation/scsi/scsi-changer.txt:		$ insmod ch			\
+Documentation/scsi/scsi-changer.txt:	All three insmod options accept up to four comma-separated
+Documentation/scsi/BusLogic.txt:  insmod BusLogic.o \
+Documentation/scsi/ChangeLog.lpfc:	  worker thread.  Fixes panic seen with insmod/rmmod testing with
+Documentation/scsi/ChangeLog.lpfc:	* Bug fixes for some insmod/rmmod crashes, link down crashes and
+Documentation/scsi/ChangeLog.lpfc:	* Added fixes to targetless hosts that caused modprobe and insmod to hang.
+Documentation/scsi/ChangeLog.lpfc:	* Fixed insmod hang after hardware error.
+Documentation/scsi/ChangeLog.lpfc:	* Free irq reservation and kill running timers when insmod or
+Documentation/scsi/ChangeLog.lpfc:	* Get rid of long mdelay's in insmod path
+Documentation/scsi/ChangeLog.lpfc:	  causing  a deadlock on insmod in some environments.
+Documentation/scsi/ChangeLog.lpfc:	* Modified detect code, on insmod, to only wait a max of 2 secs if
+Documentation/scsi/g_NCR5380.txt:When included as a module, parameters can be passed on the insmod/modprobe
+Documentation/scsi/ChangeLog.ips:        4.72.01  - I/O Mapped Memory release ( so "insmod ips" does not Fail )    
+Documentation/scsi/ncr53c8xx.txt:string variable using 'insmod'.
+Documentation/scsi/ncr53c8xx.txt:'insmod', the driver also accepts <space> as option separator. 
+Documentation/scsi/ncr53c8xx.txt:    insmod ncr53c8xx.o ncr53c8xx="tags:4 sync:10 debug:0x200"
+Documentation/scsi/ncr53c8xx.txt:In a system that contains multiple 53C8xx adapters insmod will install the 
+Documentation/scsi/ncr53c8xx.txt:    insmod sym53c8xx sym53c8xx=excl:0x1400
+Documentation/scsi/ncr53c8xx.txt:    insmod ncr53c8xx
+Documentation/parport.txt:	# insmod parport
+Documentation/parport.txt:	# insmod parport_pc io=0x3bc,0x378,0x278 irq=none,7,auto
+Documentation/parport.txt:	# insmod lp parport=0,2
+Documentation/parport.txt:   the command line, or with `insmod plip timid=1' when using modules,
+Documentation/i2c/busses/i2c-piix4:default. If you use the insmod parameter 'force=1', the kernel module will
+Documentation/kernel-parameters.txt:	bttv.radio=	Most important insmod options are available as
+Documentation/target/tcm_mod_builder.txt:target:/mnt/sdb/lio-core-2.6.git# insmod drivers/target/tcm_nab5000.ko
+Documentation/watchdog/hpwdt.txt: 4. insmod /lib/modules/`uname -r`/kernel/drivers/char/watchdog/hpwdt.ko priority=1
+Documentation/fault-injection/provoke-crashes.txt:Usage: insmod lkdtm.ko [recur_count={>0}] cpoint_name=<> cpoint_type=<>
+Documentation/module-signing.txt:Modules are loaded with insmod, modprobe, init_module() or finit_module(),
+Documentation/filesystems/afs.txt:insmod /tmp/rxrpc.o
+Documentation/filesystems/afs.txt:insmod /tmp/rxkad.o
+Documentation/filesystems/afs.txt:insmod /tmp/kafs.o rootcell=cambridge.redhat.com:172.16.18.91
+Documentation/filesystems/exofs.txt:   [exofs]$ insmod exofs.ko
+Documentation/filesystems/cifs/README:at module initialization time (by running insmod cifs.ko) can be seen.
+Documentation/filesystems/cifs/README:kernel, e.g.  insmod cifs).  To enable a feature set it to 1 e.g.  to enable 
+Documentation/filesystems/f2fs.txt: # insmod f2fs.ko
+Documentation/s390/3270.txt:	the command "insmod tub3270".  Does that command give error
+Documentation/s390/Debugging390.txt:anywhere to get around this use the -m option with insmod to emit a load
+Documentation/blockdev/paride.txt:	insmod paride
+Documentation/blockdev/paride.txt:	# insmod epat
+Documentation/blockdev/paride.txt:	# insmod kbic
+Documentation/blockdev/paride.txt:	# insmod pcd drive0=0x378,1 drive1=0x3bc,1
+Documentation/blockdev/paride.txt:	# insmod paride
+Documentation/blockdev/paride.txt:	# insmod epat
+Documentation/blockdev/paride.txt:	# insmod pd
+Documentation/blockdev/paride.txt:	insmod lp reset=1
+Documentation/blockdev/paride.txt:	# insmod paride
+Documentation/blockdev/paride.txt:	# insmod epat
+Documentation/blockdev/paride.txt:	# insmod bpck
+Documentation/blockdev/paride.txt:	# insmod kbic
+Documentation/blockdev/paride.txt:	# insmod pd verbose=1
+Documentation/blockdev/cciss.txt:        insmod cciss.ko cciss_tape_cmds=16
+Documentation/dvb/README.dvb-usb:If you use dvb-kernel enter the build-2.6 directory run 'make' and 'insmod.sh
+Documentation/video4linux/bttv/Sound-FAQ:correct board type as insmod argument, "insmod bttv card=2" for
+Documentation/video4linux/bttv/Sound-FAQ:Starting with release 0.7.41 bttv has a number of insmod options to
+Documentation/video4linux/bttv/Sound-FAQ:pll             - same as pll= insmod option
+Documentation/video4linux/bttv/Sound-FAQ:tuner_type      - same as tuner= insmod option
+Documentation/video4linux/bttv/Sound-FAQ:insmod option, the insmod option takes precedence.
+Documentation/video4linux/bttv/PROBLEMS:  "insmod bttv vidmem=0xfb0"
+Documentation/video4linux/bttv/PROBLEMS:  remap this. E.g.: insmod bttv vidmem=0xfb0 remap=0xfa0
+Documentation/video4linux/bttv/Insmod-options:module, among them a complete and up-to-date list of insmod options.
+Documentation/video4linux/bttv/Insmod-options:	insmod args:
+Documentation/video4linux/bttv/Insmod-options:		bttv_verbose=0/1/2  verbose level (at insmod time, while
+Documentation/video4linux/bttv/Insmod-options:				With this insmod option you can override this.
+Documentation/video4linux/bttv/Insmod-options:	insmod args:
+Documentation/video4linux/bttv/Insmod-options:	insmod args:
+Documentation/video4linux/bttv/Insmod-options:	insmod args for tda9874a:
+Documentation/video4linux/bttv/Insmod-options:	stereo card, you probably want to insmod this one.
+Documentation/video4linux/bttv/Insmod-options:	insmod args:
+Documentation/video4linux/bttv/Insmod-options:	insmod args:
+Documentation/video4linux/bttv/Insmod-options:	insmod args:
+Documentation/video4linux/bttv/Insmod-options:	insmod args:
+Documentation/video4linux/bttv/README.WINVIEW:insmod videodev
+Documentation/video4linux/bttv/README.WINVIEW:insmod i2c scan=1 i2c_debug=0 verbose=0
+Documentation/video4linux/bttv/README.WINVIEW:insmod tuner type=1 debug=0
+Documentation/video4linux/bttv/README.WINVIEW:insmod bttv  pll=1 radio=1 card=17
+Documentation/video4linux/bttv/README.freeze:insmod option to set the PCI latency of the device.
+Documentation/video4linux/bttv/README.quirks:The triton1 insmod option sets the EN_TBFX bit in the control register.
+Documentation/video4linux/bttv/README.quirks:The vsfx insmod option does the same for EN_VSFX bit.  If you have
+Documentation/video4linux/bttv/README:insmod options.  The most important insmod option for bttv is "card=n"
+Documentation/video4linux/bttv/README:use the firm_altera=<path> insmod option to point the driver to the
+Documentation/video4linux/README.saa7134:might have to pass card=<nr> as insmod option, check CARDLIST for
+Documentation/video4linux/README.saa7134:  There is a tuner= insmod option to override the driver's default.
+Documentation/video4linux/Zoran:Load zr36067.o. If it can't autodetect your card, use the card=X insmod
+Documentation/video4linux/Zoran:whether or not you use 'low_bitrate=1' as insmod option for the zr36060.c
+Documentation/video4linux/Zoran:'low_bitrate=1 as insmod option for zr36060.o might actually help, as is
+Documentation/video4linux/README.cx88:       trial-and-error using the tuner=<n> insmod option.  If you
+Documentation/isdn/README.HiSax:with LILO or LOADLIN or, if built as a module, using insmod/modprobe with
+Documentation/isdn/README.HiSax:insmod/modprobe  hisax.o \
+Documentation/isdn/README.HiSax:insmod/modprobe hisax.o \
+Documentation/isdn/README.HiSax:When you insmod isdn.o and hisax.o (or with the in-kernel version, during
+Documentation/isdn/README.HiSax:insmod: Simply append hisax_id=<SomeString> to the insmod command line. This
+Documentation/isdn/README.avmb1:insmod /lib/modules/current/misc/capiutil.o
+Documentation/isdn/README.avmb1:insmod /lib/modules/current/misc/b1.o
+Documentation/isdn/README.avmb1:insmod /lib/modules/current/misc/kernelcapi.o
+Documentation/isdn/README.avmb1:insmod /lib/modules/current/misc/capidrv.o
+Documentation/isdn/README.avmb1:insmod /lib/modules/current/misc/capi.o
+Documentation/isdn/README.avmb1:insmod /lib/modules/current/misc/b1pci.o
+Documentation/isdn/README.icn:  The module icn.o can be configured during "insmod'ing" it by
+Documentation/isdn/README.icn:  appending its parameters to the insmod-commandline. The following
+Documentation/isdn/README.icn:  insmod-time or (for kernel-builtin driver) on the kernel commandline.
+Documentation/isdn/README.diversion:   standard distributions you will have to add a "insmod dss1_divert" after
+Documentation/isdn/README.hfc-pci:If you want to use the card at 0xd400 standalone you should supply the insmod
+Documentation/isdn/README:  named in Documentation/Changes. Some old versions of insmod
+Documentation/isdn/README.act2000:  The module act2000.o can be configured during modprobe (insmod) by
+Documentation/isdn/README.act2000:  appending its parameters to the modprobe resp. insmod commandline.
+Documentation/isdn/README.act2000:  where idstring is the Name of the card, given during insmod-time or
+Documentation/isdn/README.sc:To install the driver, type '/sbin/insmod sc' as root. sc(4) details options
+Documentation/isdn/README.sc:resources available, use the insmod options detailed in sc(4) to override
+Documentation/isdn/README.sc:in a segmentation fault when 'insmod'ed. This problem was created when one of
+Documentation/usb/iuu_phoenix.txt: insmod iuu_phoenix param=value.
+Documentation/usb/functionfs.txt:$ insmod g_ffs.ko idVendor=<ID> iSerialNumber=<string> functions=mtp,hid
+Documentation/usb/gadget-testing.txt:On host: insmod usbserial
+Documentation/usb/usb-serial.txt:	insmod usbserial vendor=0x#### product=0x####
+Documentation/hwmon/abituguru:			detection to be skipped, and thus the insmod to
+Documentation/hwmon/abituguru:Notice if you need any of the first three options above please insmod the
+Documentation/hwmon/lm85:init_client function and add an insmod parameter to set this up.
+Documentation/hwmon/abituguru3:			detection to be skipped, and thus the insmod to
+Documentation/fb/sstfb.txt:	# If you have only one monitor to play with, once you insmod the
+Documentation/fb/sstfb.txt:	  parameter vgapass=1 when insmodding the driver. (See Kernel/Modules
+Documentation/fb/sstfb.txt:	# insmod sstfb.o
+Documentation/fb/sstfb.txt:	for module : insmod sstfb.o option1=value1 option2=value2 ...
+Documentation/fb/sisfb.txt:parameters are given with the modprobe (or insmod) command.
+Documentation/w1/masters/omap-hdq:insmod omap_hdq.ko W1_ID=2
+Documentation/virtual/uml/UserModeLinux-HOWTO.txt:  When the system is booted, you can use insmod as usual to get the
+Documentation/virtual/uml/UserModeLinux-HOWTO.txt:  helper do the host setup for you.  This involves insmod-ing the tun.o
+Documentation/virtual/uml/UserModeLinux-HOWTO.txt:  If ethertap is enabled as a module, you apparently need to insmod
+Documentation/virtual/uml/UserModeLinux-HOWTO.txt:       insmod ethertap
+Documentation/virtual/uml/UserModeLinux-HOWTO.txt:       insmod ethertap unit=1 -o ethertap1
+Documentation/virtual/uml/UserModeLinux-HOWTO.txt:  module and available inside the virtual machine, and insmod it.
+Documentation/virtual/uml/UserModeLinux-HOWTO.txt:       UML# insmod hostfs
+Documentation/virtual/uml/UserModeLinux-HOWTO.txt:  At this point, you debug normally.  When you insmod something, the
+Documentation/virtual/uml/UserModeLinux-HOWTO.txt:  Boot the kernel under the debugger and load the module with insmod or
+Documentation/mono.txt:   to insert it manually with modprobe/insmod, as kmod
+Documentation/arm/memory.txt:				Kernel modules inserted via insmod are
+Documentation/networking/dmfe.txt:	insmod dmfe
+Documentation/networking/dmfe.txt:	insmod dmfe mode=0 # Force 10M Half Duplex
+Documentation/networking/dmfe.txt:	insmod dmfe mode=1 # Force 100M Half Duplex
+Documentation/networking/dmfe.txt:	insmod dmfe mode=4 # Force 10M Full Duplex
+Documentation/networking/dmfe.txt:	insmod dmfe mode=5 # Force 100M Full Duplex
+Documentation/networking/cxgb.txt:  2. After running insmod, the driver is loaded and the incorrect network
+Documentation/networking/caif/README:		It only accepts one argument to insmod/modprobe!
+Documentation/networking/filter.txt:via insmod or modprobe against 'test_bpf' module. Results of the test cases
+Documentation/networking/ipv6.txt:Module options may be given as command line arguments to the insmod
+Documentation/networking/z8530drv.txt:	insmod scc.o
+Documentation/networking/z8530drv.txt:please read 'man insmod' that comes with module-init-tools.
+Documentation/networking/z8530drv.txt:You should include the insmod in one of the /etc/rc.d/rc.* files,
+Documentation/networking/z8530drv.txt:(or insmod). You can change all parameters but "mode" and "clock" 
+Documentation/networking/tlan.txt:	1. You can append debug=x to the end of the insmod line to get
+Documentation/networking/tlan.txt:	2. You can append aui=1 to the end of the insmod line to cause
+Documentation/networking/tlan.txt:	   do "insmod tlan.o speed=100" the driver will do Auto-Neg.
+Documentation/networking/tlan.txt:	   To force a 10Mbps Half-Duplex link do "insmod tlan.o speed=10 
+Documentation/networking/tlan.txt:	   insmod tlan speed=0,100 duplex=0,1
+Documentation/networking/generic-hdlc.txt:	insmod n2 hw=io,irq,ram,ports[:io,irq,...]
+Documentation/networking/generic-hdlc.txt:	insmod n2 hw=0x300,10,0xD0000,01
+Documentation/networking/generic-hdlc.txt:	insmod c101 hw=irq,ram[:irq,...]
+Documentation/networking/generic-hdlc.txt:	insmod c101 hw=9,0xdc000
+Documentation/networking/dl2k.txt:2. insmod dl2k.ko
+Documentation/networking/dl2k.txt:  insmod dl2k.o
+Documentation/networking/dl2k.txt:  insmod dl2k.o <optional parameter>	; add parameter
+Documentation/networking/dl2k.txt:   example: insmod dl2k.o media=100mbps_hd
+Documentation/networking/dl2k.txt:   or	    insmod dl2k.o media=3
+Documentation/networking/dl2k.txt:   or	    insmod dl2k.o media=3,2	; for 2 cards
+Documentation/networking/dl2k.txt:  The insmod command only loads the driver and gives it a name of the form
+Documentation/networking/netconsole.txt: insmod netconsole netconsole=@/,@10.0.0.2/
+Documentation/networking/netconsole.txt: insmod netconsole netconsole=@/,@fd00:1:2:3::1/
+Documentation/networking/README.sb1000:2.) I get "unresolved symbol" error messages on executing `insmod sb1000.o'.
+Documentation/networking/smc9.txt:	use:   insmod smc9194.o 
+Documentation/networking/cops.txt:board_type=2 for Dayna or Tangent with insmod.
+Documentation/networking/cops.txt:insmod cops io=0x240 irq=5
+Documentation/networking/cops.txt:insmod -o cops2 cops io=0x260 irq=3
+Documentation/networking/e1000.txt:Usage: insmod e1000.ko copybreak=128
+Documentation/networking/cs89x0.txt:    insmod cs89x0.o io=0x200 irq=0xA media=aui
+Documentation/networking/vortex.txt:    insmod 3c59x options=0x204
+Documentation/networking/arcnet.txt:If you're using a loadable module, you need to use insmod to load it, and
+Documentation/networking/arcnet.txt:	insmod arcnet.o
+Documentation/networking/arcnet.txt:	insmod com90xx.o
+Documentation/networking/arcnet.txt:	insmod com20020.o io=0x2e0 device=eth1
+Documentation/networking/arcnet.txt:	insmod -o arc0 com90xx
+Documentation/networking/arcnet.txt:	insmod -o arc1 com20020 io=0x2e0
+Documentation/networking/arcnet.txt:	insmod -o arc2 com90xx
+Documentation/networking/iphase.txt:       c. Run "insmod suni.o;insmod iphase.o"
+Documentation/networking/iphase.txt:           insmod <IA_DIR>/ia.o IA_RX_BUF=<RX_CNT> IA_RX_BUF_SZ=<RX_SIZE> \
+Documentation/networking/iphase.txt:    The debug trace can be turn on through the insmod command line option, for 
+Documentation/networking/iphase.txt:    example, "insmod iphase.o IADebugFlag=0xffffffff" can turn on all the debug 
+Documentation/networking/baycom.txt:driver from the insmod command line (or by means of an option line in
+Documentation/networking/baycom.txt:  insmod baycom_par mode="picpar" iobase=0x378
+Documentation/networking/baycom.txt:ports at startup, unless one is specified on the 'insmod' command line. Another
+Documentation/networking/ixgb.txt:   The insmod command can be used if the full
+Documentation/networking/ixgb.txt:     insmod /lib/modules/<KERNEL VERSION>/kernel/drivers/net/ixgb/ixgb.ko
+Documentation/networking/6pack.txt:- Do an insmod 6pack. Look at your /var/log/messages file to check if the 
+Documentation/networking/6pack.txt:ALPHA. BE CAREFUL! Sync your disks before insmoding the 6pack module
+Documentation/networking/bonding.txt:insmod or modprobe command, but are usually specified in either the
+Documentation/networking/batman-adv.txt:# insmod batman-adv.ko
+Documentation/networking/de4x5.txt:                   insmod de4x5 io=0xghh           where g = bus number
+Documentation/networking/de4x5.txt:                   insmod de4x5
+Documentation/networking/de4x5.txt:    5) insmod de4x5 [io=0xghh]
+Documentation/networking/de4x5.txt:    time  OR during  a   module load  (insmod  de4x5   args='eth??:fdx' [see
+Documentation/networking/de4x5.txt:        insmod de4x5 args='eth1:fdx autosense=BNC eth0:autosense=100Mb'.
+Documentation/networking/s2io.txt:# insmod s2io.ko
+Documentation/networking/ltpc.txt:"irq=", and "dma=" on the command line with insmod or modprobe, or add
+Documentation/powerpc/hvcs.txt:the driver as a module with insmod parameters.
+Documentation/powerpc/hvcs.txt:	insmod hvcserver.ko
+Documentation/powerpc/hvcs.txt:	insmod hvcs.ko
+Documentation/powerpc/hvcs.txt:To override the default use an insmod parameter as follows (requesting 4
+Documentation/powerpc/hvcs.txt:	insmod hvcs.ko hvcs_parm_num_devs=4
+Documentation/powerpc/hvcs.txt:There is a maximum number of dev entries that can be specified on insmod.
+Documentation/powerpc/hvcs.txt:NOTE: The length of time it takes to insmod the driver seems to be related
+Documentation/powerpc/hvcs.txt:persistent.  Once created they will exist prior to the driver insmod.
+Documentation/sysctl/kernel.txt:   2 - A module was force loaded by insmod -f.
+sound/oss/CHANGELOG:the insmod command line (insmod sound init_trace=1).
+sound/drivers/ml403-ac97cr.c:					 * readiness (after insmod)
+include/linux/cpufeature.h: *    (not even by manual insmod).
+include/uapi/linux/wireless.h: * better than command line options of insmod because we may want to
+tools/usb/usbip/README:    server:# insmod usbip-core.ko
+tools/usb/usbip/README:    server:# insmod usbip-host.ko
+tools/usb/usbip/README:    client:# insmod usbip-core.ko
+tools/usb/usbip/README:    client:# insmod vhci-hcd.ko
+tools/usb/usbip/README:    trois:# insmod path/to/usbip-core.ko
+tools/usb/usbip/README:    trois:# insmod path/to/usbip-host.ko
+tools/usb/usbip/README:    deux:# insmod path/to/usbip-core.ko
+tools/usb/usbip/README:    deux:# insmod path/to/vhci-hcd.ko
+arch/mips/kernel/vpe.c:	/* Sanity checks against insmoding binaries or wrong arch,
+arch/x86/include/asm/floppy.h: * is needed to prevent corrupted CMOS RAM in case "insmod floppy"
+arch/um/drivers/harddog_kern.c: *	Added soft_margin; use upon insmod to change the timer delay.
+arch/arc/mm/cache.c: * This is called on insmod, with kernel virtual address for CODE of
+arch/arc/kernel/signal.c: *  -ViXS were still seeing crashes when using insmod to load drivers.
+arch/parisc/kernel/parisc_ksyms.c:/* Needed so insmod can set dp value */
+drivers/remoteproc/da8xx_remoteproc.c:	 * since a subsequent insmod of this module may enable the DSP's
+drivers/scsi/pmcraid.c: * called by user threads (modprobe/insmod/rmmod) timer, tasklet and midlayer's
+drivers/scsi/pcmcia/nsp_cs.c:/* Parameters that can be set with 'insmod' */
+drivers/scsi/pcmcia/aha152x_stub.c:/* Parameters that can be set with 'insmod' */
+drivers/scsi/aic7xxx/aic79xx_osm.c: * the proper insmod parameters.
+drivers/scsi/in2000.c: *       either the LILO or the 'insmod' command line. For LILO do:
+drivers/scsi/in2000.c: *       and with insmod go like:
+drivers/scsi/in2000.c: *          "insmod /usr/src/linux/modules/in2000.o setup_strings=blah,blah"
+drivers/scsi/in2000.c: * these settings. If Linux boots with a LILO or insmod command-line, those
+drivers/scsi/in2000.c: * are prefixed with "in2000=" while insmod uses a "setup_strings=" prefix.
+drivers/scsi/in2000.c: * A few LILO examples (for insmod, use 'setup_strings' instead of 'in2000'):
+drivers/scsi/in2000.c:/* filled in by 'insmod' */
+drivers/scsi/fdomain.c: 2.2.0       5.50        28 Dec 1998  Support insmod parameters
+drivers/scsi/fdomain.c:/* Allow insmod parameters to be like LILO parameters.  For example:
+drivers/scsi/fdomain.c:   insmod fdomain fdomain=0x140,11 */
+drivers/scsi/sim710.c:static char *sim710;		/* command line passed by insmod */
+drivers/scsi/gdth.c:/* LILO and modprobe/insmod parameters */
+drivers/scsi/gdth.c:/* parameters for modprobe/insmod */
+drivers/scsi/NCR_D700.c:static char *NCR_D700;		/* command line from insmod */
+drivers/scsi/aha152x.c: * - added configuration symbols for insmod (aha152x/aha152x1)
+drivers/scsi/ips.c:/* 4.72.01  - I/O Mapped Memory release ( so "insmod ips" does not Fail )    */
+drivers/scsi/wd33c93.c: *       the 'amiboot' or the 'insmod' command line. For amiboot do:
+drivers/scsi/wd33c93.c: * these settings. If Linux boots with an amiboot or insmod command-line,
+drivers/scsi/wd33c93.c: * command-lines are prefixed with "wd33c93=" while insmod uses a
+drivers/scsi/wd33c93.c: * Some amiboot examples (for insmod, use 'setup_strings' instead of 'wd33c93'):
+drivers/scsi/esas2r/esas2r_log.c: * insmod <module> event_log_level=1
+drivers/scsi/esas2r/esas2r_log.c: * insmod <module> event_log_level=3
+drivers/scsi/qla1280.c: * insmod needs to find the variable and make it point to something
+drivers/scsi/qla1280.c:/* insmod qla1280 options=verbose" */
+drivers/scsi/ch.c:			VPRINTK(KERN_INFO, "dt 0x%x: [insmod option] ",
+drivers/scsi/Kconfig:	  and then load it using insmod after isapnp has run. The parameters
+drivers/scsi/Kconfig:	  insmod sym53c416 sym53c416=<base>,<irq> [sym53c416_1=<base>,<irq>]
+drivers/scsi/ncr53c8xx.c:char *ncr53c8xx;	/* command line passed by insmod */
+drivers/scsi/BusLogic.c:  BusLogic can be assigned a string by insmod.
+drivers/block/paride/pg.c:	some parameters from the insmod command line.  The following
+drivers/block/paride/pg.c:/* Here are things one can override from the insmod command.
+drivers/block/paride/pf.c:        some parameters from the insmod command line.  The following
+drivers/block/paride/pf.c:/* Here are things one can override from the insmod command.
+drivers/block/paride/pt.c:        some parameters from the insmod command line.  The following
+drivers/block/paride/pt.c:/* Here are things one can override from the insmod command.
+drivers/block/paride/pd.c:        some parameters from the insmod command line.  The following
+drivers/block/paride/pd.c:/* Here are things one can override from the insmod command.
+drivers/block/paride/pcd.c:        some parameters from the insmod command line.  The following
+drivers/block/paride/pcd.c:/* Here are things one can override from the insmod command.
+drivers/block/floppy.c: * 2001/08/26 -- Paul Gortmaker - fix insmod oops on machines with no
+drivers/i2c/busses/i2c-sis5595.c:/* insmod parameters */
+drivers/i2c/busses/i2c-piix4.c:/* insmod parameters */
+drivers/i2c/busses/i2c-sis630.c:/* insmod parameters */
+drivers/pcmcia/rsrc_nonstatic.c:/* Parameters that can be set with 'insmod' */
+drivers/pcmcia/i82365.c:/* Parameters that can be set with 'insmod' */
+drivers/pcmcia/tcic.c:/* Parameters that can be set with 'insmod' */
+drivers/watchdog/wdt.c: *		Tim Hockin	:	Added insmod parameters, comment
+drivers/watchdog/wdt_pci.c: *		Tim Hockin	:	Added insmod parameters, comment cleanup
+drivers/watchdog/softdog.c: *	Added soft_margin; use upon insmod to change the timer delay.
+drivers/s390/block/dasd_devmap.c: * it is named 'dasd' to directly be filled by insmod with the comma separated
+drivers/isdn/sc/init.c:/* insmod set parameters */
+drivers/isdn/hisax/config.c:/* Variables for insmod */
+drivers/isdn/hisax/teles_cs.c:/* Parameters that can be set with 'insmod' */
+drivers/isdn/hisax/elsa_cs.c:/* Parameters that can be set with 'insmod' */
+drivers/isdn/hisax/avma1_cs.c:/* Parameters that can be set with 'insmod' */
+drivers/isdn/hisax/sedlbauer_cs.c:/* Parameters that can be set with 'insmod' */
+drivers/isdn/act2000/module.c:/* Parameters to be set by insmod */
+drivers/usb/host/isp116x-hcd.c:	   after next 'insmod' without this */
+drivers/tty/serial/8250/serial_cs.c:/* Parameters that can be set with 'insmod' */
+drivers/tty/serial/jsm/jsm.h: * Debugging levels can be set using debug insmod variable
+drivers/tty/hvc/hvcs.c: * register the tty_driver. This can be overridden using an insmod parameter.
+drivers/tty/hvc/hvcs.c: * The user can't insmod with more than HVCS_MAX_SERVER_ADAPTERS hvcs device
+drivers/tty/hvc/hvcs.c: * specify a module insmod parameter.  If they DO specify one then it is set to
+drivers/tty/hvc/hvcs.c:	/* Has the user specified an overload with an insmod param? */
+drivers/tty/n_hdlc.c:/* debug level can be set by insmod for debugging purposes */
+drivers/tty/isicom.c: *					info during insmod as well as module
+drivers/tty/mxser.c:/* Variables for insmod */
+drivers/staging/gs_fpgaboot/README:	$ insmod gs_fpga.ko file="xlinx_fpga_top_bitstream.bit"
+drivers/staging/vt6656/main_usb.c: *   vt6656_probe - module initial (insmod) driver entry
+drivers/staging/sm750fb/sm750.c:		 "\t\tinsmod ./sm750fb.ko g_option=\"noaccel,nohwc,1280x1024-8@60\"\n"
+drivers/staging/sm750fb/readme:	insmod ./sm750fb.ko g_option="1280x1024-8@60"
+drivers/staging/sm750fb/readme:	insmod ./sm750fb.ko g_option="noaccel:nomtrr:nohwc:800x600"
+drivers/staging/sm750fb/readme:	insmod ./sm750fb.ko g_option="dual,800x600:1024x768"
+drivers/staging/sm750fb/readme:		insmod ./sm750fb.ko g_option="noaccel:1280x1024@60:otherparm:etc..."
+drivers/staging/rtl8712/rtl8712_led.c:	 * insmod;ifconfig up;rmmod commands. */
+drivers/staging/vt6655/device_main.c: *   vt6655_probe - module initial (insmod) driver entry
+drivers/ata/sata_nv.c: *  by rescanning or rmmod/insmod fails to acquire the initial D2H Reg
+drivers/media/tuners/tuner-simple.c:				   "set to input %d (insmod option)\n",
+drivers/media/tuners/tuner-simple.c:				   "set to input %d (insmod option)\n",
+drivers/media/tuners/tda9887.c:static int tda9887_set_insmod(struct dvb_frontend *fe)
+drivers/media/tuners/tda9887.c:	tda9887_set_insmod(fe);
+drivers/media/i2c/ir-kbd-i2c.c:/* insmod parameters                                                       */
+drivers/media/i2c/saa6588.c:/* insmod options */
+drivers/media/i2c/tvaudio.c:/* insmod args                                                            */
+drivers/media/i2c/tvaudio.c:static int debug;	/* insmod parameter */
+drivers/media/i2c/tvaudio.c:	int        *insmodopt;
+drivers/media/i2c/tvaudio.c:/* insmod options for tda9874a */
+drivers/media/i2c/tvaudio.c:/* insmod options to enable/disable individual audio chips */
+drivers/media/i2c/tvaudio.c:		.insmodopt  = &tda9840,
+drivers/media/i2c/tvaudio.c:		.insmodopt  = &tda9873,
+drivers/media/i2c/tvaudio.c:		.insmodopt  = &tda9874a,
+drivers/media/i2c/tvaudio.c:		.insmodopt  = &tda9875,
+drivers/media/i2c/tvaudio.c:		.insmodopt  = &tda9850,
+drivers/media/i2c/tvaudio.c:		.insmodopt  = &tda9855,
+drivers/media/i2c/tvaudio.c:		.insmodopt  = &tea6300,
+drivers/media/i2c/tvaudio.c:		.insmodopt  = &tea6320,
+drivers/media/i2c/tvaudio.c:		.insmodopt  = &tea6420,
+drivers/media/i2c/tvaudio.c:		.insmodopt  = &tda8425,
+drivers/media/i2c/tvaudio.c:		.insmodopt  = &pic16c54,
+drivers/media/i2c/tvaudio.c:		.insmodopt  = &ta8874z,
+drivers/media/i2c/tvaudio.c:		if (0 == *(desc->insmodopt))
+drivers/media/i2c/ks0127.c:static int debug; /* insmod parameter */
+drivers/media/i2c/tda7432.c:static int debug;	 /* insmod parameter */
+drivers/media/usb/pvrusb2/pvrusb2-i2c-core.c:MODULE_PARM_DESC(i2c_scan,"scan i2c bus at insmod time");
+drivers/media/usb/cx231xx/cx231xx-i2c.c:MODULE_PARM_DESC(i2c_scan, "scan i2c bus at insmod time");
+drivers/media/usb/em28xx/em28xx-i2c.c:MODULE_PARM_DESC(i2c_scan, "scan i2c bus at insmod time");
+drivers/media/usb/em28xx/em28xx-cards.c:	em28xx_errdev("You may try to use card=<n> insmod option to "
+drivers/media/usb/em28xx/em28xx-cards.c:		      " insmod option:\n");
+drivers/media/usb/au0828/au0828-i2c.c:MODULE_PARM_DESC(i2c_scan, "scan i2c bus at insmod time");
+drivers/media/usb/pwc/philips.txt:   so you would supply trace=12 during insmod or modprobe. If
+drivers/media/dvb-frontends/dvb-pll.c:				"insmod option" : "autodetected");
+drivers/media/v4l2-core/tuner-core.c:/* insmod options used at init time => read/only */
+drivers/media/v4l2-core/tuner-core.c:/* insmod options used at runtime => read/write */
+drivers/media/pci/zoran/zr36060.c:	 * ratio 1:2. Setting low_bitrate (insmod option) sets
+drivers/media/pci/saa7134/saa7134-tvaudio.c:			/* insmod option override */
+drivers/media/pci/saa7134/saa7134-ts.c:	/* sanitycheck insmod options */
+drivers/media/pci/saa7134/saa7134-core.c:			"saa7134: You can use the card=<nr> insmod option to specify\n"
+drivers/media/pci/saa7134/saa7134-core.c:			"saa7134: insmod option to specify which board do you have, but this is\n"
+drivers/media/pci/saa7134/saa7134-core.c:		"autodetected" : "insmod option");
+drivers/media/pci/saa7134/saa7134-cards.c:		"%s: out there, you might have to use the tuner=<nr> insmod\n"
+drivers/media/pci/saa7134/saa7134-cards.c:			"%s: you try the audio_clock_override=0x200000 insmod option.\n",
+drivers/media/pci/saa7134/saa7134-cards.c:		 * insmod option or if we have the default configuration T200*/
+drivers/media/pci/saa7134/saa7134-i2c.c:MODULE_PARM_DESC(i2c_scan,"scan i2c bus at insmod time");
+drivers/media/pci/saa7134/saa7134.h:	/* insmod option/autodetected */
+drivers/media/pci/saa7134/saa7134-video.c:	/* sanitycheck insmod options */
+drivers/media/pci/saa7134/saa7134-dvb.c:		/* otherwise we don't detect the tuner on next insmod */
+drivers/media/pci/bt8xx/bttv-i2c.c:MODULE_PARM_DESC(i2c_scan,"scan i2c bus at insmod time");
+drivers/media/pci/bt8xx/bttv-i2c.c:MODULE_PARM_DESC(i2c_udelay,"soft i2c delay at insmod time, in usecs "
+drivers/media/pci/bt8xx/bttvp.h:/* insmod options */
+drivers/media/pci/bt8xx/bttv-cards.c:/* insmod options */
+drivers/media/pci/bt8xx/bttv-cards.c:		/* try "insmod msp3400 simple=0" if you have
+drivers/media/pci/bt8xx/bttv-cards.c:		/* try "insmod msp3400 simple=0" if you have
+drivers/media/pci/bt8xx/bttv-cards.c:			pr_debug("please mail id, board name and the correct card= insmod option to linux-media@vger.kernel.org\n");
+drivers/media/pci/bt8xx/bttv-cards.c:		? "insmod option" : "autodetected");
+drivers/media/pci/bt8xx/bttv-cards.c:	if (tuner_type != UNSET) /* only set if known tuner autodetected, else let insmod option through */
+drivers/media/pci/bt8xx/bttv-cards.c:		/* insmod options can override */
+drivers/media/pci/bt8xx/bttv-cards.c:	/* tuner configuration (from card list / autodetect / insmod option) */
+drivers/media/pci/bt8xx/bttv-driver.c:/* insmod args */
+drivers/media/pci/bt8xx/bttv-driver.c:	/* init options from insmod args */
+drivers/media/pci/cx23885/cx23885-core.c:	       "insmod option" : "autodetected");
+drivers/media/pci/cx23885/cx23885-cards.c:		       "%s: be autodetected. Pass card=<n> insmod option\n"
+drivers/media/pci/cx23885/cx23885-cards.c:		       "%s: card=<n> insmod option.  Updating to the latest\n"
+drivers/media/pci/cx23885/cx23885-cards.c:	printk(KERN_INFO "%s: Here is a list of valid choices for the card=<n> insmod option:\n",
+drivers/media/pci/cx23885/cx23885-i2c.c:MODULE_PARM_DESC(i2c_scan, "scan i2c bus at insmod time");
+drivers/media/pci/cx88/cx88-cards.c:		       "%s: be autodetected.  Please pass card=<n> insmod option to\n"
+drivers/media/pci/cx88/cx88-cards.c:		       "%s: card=<n> insmod option.  Updating to the latest\n"
+drivers/media/pci/cx88/cx88-cards.c:		   "insmod option:\n");
+drivers/media/pci/cx88/cx88-cards.c:	/* check insmod options */
+drivers/media/pci/cx88/cx88-cards.c:		"insmod option" : "autodetected",
+drivers/media/pci/cx88/cx88-i2c.c:MODULE_PARM_DESC(i2c_scan,"scan i2c bus at insmod time");
+drivers/media/pci/cx88/cx88-i2c.c:MODULE_PARM_DESC(i2c_udelay,"i2c delay at insmod time, in usecs "
+drivers/media/pci/cx25821/cx25821-i2c.c:MODULE_PARM_DESC(i2c_scan, "scan i2c bus at insmod time");
+drivers/media/pci/cx25821/cx25821-core.c:		"insmod option" : "autodetected");
+drivers/media/pci/saa7164/saa7164-cards.c:			"%s: be autodetected. Pass card=<n> insmod option to\n"
+drivers/media/pci/saa7164/saa7164-cards.c:			"%s: card=<n> insmod option.  Updating to the latest\n"
+drivers/media/pci/saa7164/saa7164-cards.c:	printk(KERN_ERR "%s: Here are valid choices for the card=<n> insmod "
+drivers/media/pci/saa7164/saa7164-core.c:	       "insmod option" : "autodetected");
+drivers/media/pci/dm1105/dm1105.c:			"dm1105: Please pass card=<n> insmod option to\n"
+drivers/media/pci/dm1105/dm1105.c:			"dm1105: card configs via card=<n> insmod option.\n"
+drivers/media/pci/dm1105/dm1105.c:		   "insmod option:\n");
+drivers/char/lp.c: *	# insmod lp.o parport=1,none,2
+drivers/char/lp.c: *	# insmod lp.o parport=auto
+drivers/char/lp.c: *	# insmod lp.o reset=1
+drivers/char/ipmi/ipmi_bt_sm.c:/* called externally at insmod time, and internally on cleanup */
+drivers/char/ipmi/ipmi_bt_sm.c:	/* this is most likely during insmod */
+drivers/char/Kconfig:	  time with "insmod button reboot_count=<something>".
+drivers/char/mwave/README:  insmod mwave mwave_3780i_irq=10 mwave_3780i_io=0x0130 mwave_uart_irq=3 mwave_uart_io=0x2f8
+drivers/mtd/ftl.c:/* Parameters that can be set with 'insmod' */
+drivers/message/fusion/mptdebug.h: * insmod mptbase.ko mpt_debug_level=8
+drivers/atm/horizon.c:  only the vpi vs vci bit allocation can be specified at insmod.
+drivers/net/sb1000.c:	/* If we don't do this, we can't re-insmod it later. */
+drivers/net/arcnet/com90xx.c:static int io;			/* use the insmod io= irq= shmem= options */
+drivers/net/arcnet/com90io.c:static int io;			/* use the insmod io= irq= shmem= options */
+drivers/net/arcnet/arc-rimi.c:static int io;			/* use the insmod io= irq= node= options */
+drivers/net/arcnet/com20020_cs.c:/* Parameters that can be set with 'insmod' */
+drivers/net/arcnet/com20020-isa.c:static int irq = 0;		/* or use the insmod io= irq= shmem= options */
+drivers/net/wimax/i2400m/i2400m.h: *	the whole driver life cycle (from insmod to rmmod) but for the
+drivers/net/slip/slip.h:					   insmod -oslip_maxdev=nnn	*/
+drivers/net/slip/slip.c: *					With MODULE-loading ``insmod'', user
+drivers/net/usb/hso.c:/* change the debug level (eg: insmod hso.ko debug=0x04) */
+drivers/net/usb/hso.c:/* set the major tty number (eg: insmod hso.ko tty_major=245) */
+drivers/net/usb/hso.c:/* disable network interface (eg: insmod hso.ko disable_net=1) */
+drivers/net/hamradio/baycom_ser_hdx.c: *  Command line options (insmod command line)
+drivers/net/hamradio/baycom_par.c: *  Command line options (insmod command line)
+drivers/net/hamradio/bpqether.c: *	startup or (if started before the "insmod" of an ethernet device)
+drivers/net/hamradio/mkiss.c:static int crc_force = 0;	/* Can be overridden with insmod */
+drivers/net/hamradio/baycom_ser_fdx.c: *  Command line options (insmod command line)
+drivers/net/ethernet/broadcom/bnx2x/bnx2x_main.c:		BNX2X_ERR("path %d: Entry does not exist for eeh; Flow occurs before initial insmod is over ?\n",
+drivers/net/ethernet/smsc/smc9194.c:		CARDNAME": You shouldn't use auto-probing with insmod!\n" );
+drivers/net/ethernet/smsc/smc9194.c:	/* copy the parameters from insmod into the device structure */
+drivers/net/ethernet/dec/tulip/de4x5.c:                   insmod de4x5 io=0xghh           where g = bus number
+drivers/net/ethernet/dec/tulip/de4x5.c:                   insmod de4x5
+drivers/net/ethernet/dec/tulip/de4x5.c:    5) insmod de4x5 [io=0xghh]
+drivers/net/ethernet/dec/tulip/de4x5.c:    time  OR during  a   module load  (insmod  de4x5   args='eth??:fdx' [see
+drivers/net/ethernet/dec/tulip/de4x5.c:        insmod de4x5 args='eth1:fdx autosense=BNC eth0:autosense=100Mb'.
+drivers/net/ethernet/dec/tulip/de4x5.c:    insmod "args" line;  for built-in kernels either change the driver to do
+drivers/net/ethernet/dec/tulip/de4x5.c:** insmod de4x5 args='eth1:fdx autosense=BNC eth0:autosense=100Mb'.
+drivers/net/ethernet/dec/tulip/uli526x.c: *	when user used insmod to add module, system invoked init_module()
+drivers/net/ethernet/dec/tulip/dmfe.c: *	when user used insmod to add module, system invoked init_module()
+drivers/net/ethernet/3com/3c509.c:		v1.13 9/8/97 Made 'max_interrupt_work' an insmod-settable variable -djb
+drivers/net/ethernet/amd/ni65.c:/* set: io,irq,dma or set it when calling insmod */
+drivers/net/ethernet/amd/nmclan_cs.c:   'insmod pcmcia_core.o io_speed=300'.
+drivers/net/ethernet/amd/nmclan_cs.c:	'insmod'.
+drivers/net/ethernet/hp/hp100.c:**   - fix for multiple cards and hp100_mode parameter (insmod)
+drivers/net/ethernet/hp/hp100.c:	 * Use the variable "hp100_mode" upon insmod or as kernel parameter to
+drivers/net/ethernet/hp/hp100.c:	lp->rx_ratio = hp100_rx_ratio;	/* can be conf'd with insmod */
+drivers/net/ethernet/hp/hp100.c:/* Parameters set by insmod */
+drivers/net/wireless/ath/wil6210/main.c:	 * illegal value since we assume this will fail insmod
+drivers/net/wireless/libertas/README:		insmod usb8388.ko [fw_name=usb8388.bin]
+drivers/net/wireless/cw1200/cw1200_sdio.c:/* Init Module function -> Called by insmod */
+drivers/net/wireless/mwifiex/README:		insmod mwifiex.ko
+drivers/net/wireless/ray_cs.c:/* Parameters that can be set with 'insmod' */
+drivers/net/wireless/airo.c:/* These variables are for insmod, since it seems that the rates
+drivers/net/wireless/airo.c: *  Run at insmod time or after reset  when the decriptors
+drivers/net/wireless/airo.c:		/* Check to see if there are any insmod configured
+drivers/net/ppp/ppp_mppe.c: * this way the module will fail to insmod if they aren't available.
+drivers/net/appletalk/cops.c: *					Can set board type in insmod
+drivers/net/appletalk/cops.c: * insmod/modprobe configurable stuff.
+drivers/net/appletalk/cops.c:		printk(KERN_WARNING "%s: You shouldn't autoprobe with insmod\n",
+drivers/net/appletalk/ltpc.c:   line and through insmod
+drivers/net/appletalk/ltpc.c: * Change source LTALK_LOGGING debug switch to insmod ... debug=2.
+drivers/net/appletalk/ltpc.c: * Added debug=1 parameter on insmod for debugging prints.  Tried
+drivers/net/appletalk/ltpc.c:*	insmod ltpc.o debug=1
+drivers/net/appletalk/ltpc.c:/* insmod-tweakable variables */
+drivers/net/wan/x25_asy.h:					   insmod -ox25_asy_maxdev=nnn	*/
+drivers/net/can/slcan.c:				   insmod slcan.ko maxdev=nnn	*/
+drivers/net/can/cc770/cc770_isa.c: *   insmod cc770_isa.ko port=0x310,0x380 irq=7,11
+drivers/net/can/cc770/cc770_isa.c: *   insmod cc770_isa.ko mem=0xd1000,0xd1000 irq=7,11
+drivers/net/can/cc770/cc770_isa.c: *   insmod cc770_isa.ko port=0x310,0x380 indirect=1 irq=7,11
+drivers/net/can/cc770/cc770_isa.c: *   insmod cc770_isa.ko mem=0xd1000,0xd1000 irq=7,11 clk=24000000
+drivers/net/can/cc770/cc770_isa.c: *   insmod cc770_isa.ko mem=0xd1000,0xd1000 irq=7,11 clk=24000000,24000000
+drivers/pci/pcie/aer/aerdrv_core.c:			 * unable to recover because a later insmod
